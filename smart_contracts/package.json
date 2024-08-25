@@ -1,0 +1,21 @@
+{
+  "name": "smart_contracts",
+  "version": "1.0.0",
+  "description": "A crowd funding smart contracts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "npx hardhat ignition deploy ./ignition/modules/Campaign.js --network localhost",
+    "script": "npx hardhat run script/script.js --network localhost",
+    "sepolia": "npx hardhat ignition deploy ./ignition/modules/Campaign.js --network sepolia"
+  },
+  "author": "Dawit Mellese",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.9"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
